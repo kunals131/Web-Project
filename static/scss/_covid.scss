@@ -1,0 +1,95 @@
+.covid {
+    .covid__container {
+        width: 80%;
+        padding: 1.5rem;
+        
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // border: 1px solid black;
+    }
+    &__text {
+        text-align: center;
+        // border: 1px solid black;
+
+        &-img {
+            display: flex;
+            justify-content: center;
+            img {
+            width: 48%;
+            }
+        }
+        &-heading {
+        // border: 1px solid black;
+
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        &-para {
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+        &-button {
+            button {
+                margin-top: 2rem;
+                // border: 1px solid black;
+                background: transparent;
+                padding: 0.5rem 1rem ;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.covid__img {
+    display: none;
+}
+
+@media screen and (min-width : 1024px) {
+    .covid {
+        margin-top: 4rem;
+        &__img {
+            display: block;
+            img {
+                width: 55%;
+            }
+        }
+        .covid__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__text {
+            text-align: left;
+            width: 60%;
+            &-img {
+                display: none;
+            }
+            &-heading {
+            text-align: left;
+            }
+            &-para {
+                font-size: 0.9rem;
+                width: 80%;
+            }
+            
+        }
+    }
+}
+
+.section-divider {
+    width: 55%;
+    margin: 1rem auto;
+    height: 2px;
+    
+}

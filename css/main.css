@@ -4,6 +4,117 @@
   font-weight: regular;
 }
 
+.covid .covid__container {
+  width: 80%;
+  padding: 1.5rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.covid__text {
+  text-align: center;
+}
+
+.covid__text-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.covid__text-img img {
+  width: 48%;
+}
+
+.covid__text-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.covid__text-para {
+  font-size: 0.85rem;
+  margin-top: 2rem;
+}
+
+.covid__text-button button {
+  margin-top: 2rem;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.covid__text-button button:hover {
+  background: black;
+  color: white;
+}
+
+.covid__img {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .covid {
+    margin-top: 4rem;
+  }
+  .covid__img {
+    display: block;
+  }
+  .covid__img img {
+    width: 55%;
+  }
+  .covid .covid__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .covid__text {
+    text-align: left;
+    width: 60%;
+  }
+  .covid__text-img {
+    display: none;
+  }
+  .covid__text-heading {
+    text-align: left;
+  }
+  .covid__text-para {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+}
+
+.section-divider {
+  width: 55%;
+  margin: 1rem auto;
+  height: 2px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -183,7 +294,7 @@
 
 .home-section-2 {
   height: 100vh;
-  background: #EBEBEB;
+  background: #ebebeb;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,5 +412,86 @@
 
 .header-top .home__bottom__header-items-item {
   font-size: 1rem;
+}
+
+@media screen and (max-width: 560px) {
+  .home__header__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home__header__left-1 {
+    margin-left: 1.5rem;
+    height: 20px;
+    width: 20px;
+    padding: 1rem 1rem;
+    cursor: pointer;
+  }
+  .home__header__left-1:hover {
+    background: white;
+    color: black;
+  }
+  .home__header__left:first-child {
+    margin-left: -1.5rem;
+  }
+  .home__header__center-logo {
+    margin-top: -0.4rem;
+  }
+  .home__header__center-logo-item {
+    width: 65%;
+  }
+  .home__header__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home__header__right__menu {
+    margin-left: 2.5rem;
+  }
+  .home__header__right__menu-img {
+    width: 70%;
+  }
+  .home__header__right__button {
+    padding: 0.8rem 1rem;
+    font-size: 0.7rem;
+  }
+  .home__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80vh;
+  }
+  .home__body-text-main {
+    font-size: 2.3rem;
+    width: 50%;
+    font-family: "blackChancery", sans-serif;
+  }
+  .home__bottom {
+    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.5)), to(transparent));
+    background: linear-gradient(360deg, black, rgba(0, 0, 0, 0.5), transparent);
+  }
+  .home__bottom__header-logo {
+    display: none;
+  }
+  .home__bottom__header-items {
+    font-size: 0.8rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: -2.3rem;
+  }
+  .home__bottom__header-items-item {
+    margin-left: 2.3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
