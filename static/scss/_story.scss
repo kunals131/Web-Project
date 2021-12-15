@@ -1,0 +1,72 @@
+.story {
+    &__container {
+        width: 85%;
+        margin: auto;
+    }
+    &__message {
+        font-family: 'didot' sans-serif;
+        margin-top: 2rem;
+        .content {
+            text-align: center;
+        }
+        &-heading {
+            font-family: 'Noto Serif Display', serif;
+            font-weight: 500;
+     
+            font-size: 1.4rem;
+        }
+        &-img-cont {
+            display: none;
+        }
+        &-img {
+            margin-top: 2.3rem;
+            img {
+            border-radius: 2px;
+                width: 100%;
+            }
+        }
+        &-text {
+    
+            font-size: 0.8rem;
+            margin-top: 1.4rem;
+        }
+        &-name {
+            font-size: 0.9rem;
+ 
+            font-family: 'Noto Serif Display', serif;
+            margin-top: 0.9rem;
+        }
+    }
+
+}
+
+@media screen and (min-width : 900px){
+    .story {
+        &__message {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            align-items: center;
+            &-img-cont {
+                display: block;
+                img {
+                    width: 90%;
+                    border-radius: 2px;
+                }
+            }
+            &-text {
+                width: 75%;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+
+            }
+            &-img {
+                display: none;
+            }
+        }
+    }
+    
+}
