@@ -4,6 +4,12 @@
   font-weight: regular;
 }
 
+@font-face {
+  font-family: didot;
+  src: url(../../fonts/didotregular.ttf);
+  font-weight: regular;
+}
+
 .covid .covid__container {
   width: 80%;
   padding: 1.5rem;
@@ -166,6 +172,89 @@
 
 .about__item-text-para {
   font-size: 0.7rem;
+}
+
+.story__container {
+  width: 85%;
+  margin: auto;
+}
+
+.story__message {
+  font-family: 'didot' sans-serif;
+  margin-top: 2rem;
+}
+
+.story__message .content {
+  text-align: center;
+}
+
+.story__message-heading {
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.story__message-img-cont {
+  display: none;
+}
+
+.story__message-img {
+  margin-top: 2.3rem;
+}
+
+.story__message-img img {
+  border-radius: 2px;
+  width: 100%;
+}
+
+.story__message-text {
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+}
+
+.story__message-name {
+  font-size: 0.9rem;
+  font-family: 'Noto Serif Display', serif;
+  margin-top: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+  .story__message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .story__message-img-cont {
+    display: block;
+  }
+  .story__message-img-cont img {
+    width: 90%;
+    border-radius: 2px;
+  }
+  .story__message-text {
+    width: 75%;
+  }
+  .story__message .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .story__message-img {
+    display: none;
+  }
 }
 
 .footer {
