@@ -1,0 +1,113 @@
+.hotel {
+    margin-top: 2rem;
+    &__content {
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    &__heading {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    &__img {
+        margin-top: 2rem;
+        width: 95%;
+    }
+    &__para {
+        font-size: 0.75rem;
+        width: 90%;
+        margin: auto;
+        font-weight: 300;
+        margin-top: 2rem;
+    }
+    &__left {
+        display: none;
+    }
+    &__button {
+        margin-top: 1.8rem;
+        padding: 0.5rem 1.3rem;
+        background-color: transparent;
+        border-radius: 1px solid black;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+.style-component {
+    margin: auto;
+    margin-top: 3rem;
+    width: 95%;
+    height: 9rem;
+    
+    &-img {
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        background: url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=749&q=80') center center/cover;
+    }
+    &-text {
+        font-family: "blackChancery", sans-serif;
+
+        background-color: rgb(219, 219, 219);
+        background-image: linear-gradient(rgb(206, 206, 206),white);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        height: 4rem;
+        border-radius: 3px;
+        position: relative;
+        top: -45px;
+    }
+
+}
+
+.rgallery {
+    margin-top:7rem;
+    &__content {
+        width: 88%;
+        margin: auto;
+        text-align: center;
+    }
+    &__text {
+        display: flex;
+        justify-content: space-between;
+       &-heading {
+           font-size: 1.4rem;
+           font-family: 'Noto Serif Display', serif;
+       }
+    }
+    &__grid {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,0.5fr);
+        justify-content: center;
+        align-items: center;
+        overflow-x: scroll;
+        justify-content: center;
+        grid-gap: 1rem;
+
+        grid-auto-flow: column;
+        &-item {
+            height: 100%;
+            width: 100%;
+            &-img {
+                width: 200px;
+                height: 230px;
+                background: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') center center/cover;
+            }
+        }
+
+    }
+}
+
+.secondary__gallery {
+    margin-top: 4rem;
+}
