@@ -130,7 +130,7 @@
 
 /*-------------- experience css-------- */
 .exp {
-  width: 45%;
+  width: 85%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 6rem;
@@ -150,13 +150,13 @@
 }
 
 .exp__1 h3 {
-  font-size: 3rem;
+  font-size: 2.1rem;
   color: #AA8B1B;
   font-weight: 300;
 }
 
 .exp__2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1.5rem 0rem;
 }
 
@@ -238,7 +238,7 @@
   }
   .main__left img {
     height: 20rem;
-    width: 30rem;
+    width: 85%;
     margin: auto;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
