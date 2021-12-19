@@ -6,7 +6,9 @@
 @import 'blog';
 @import 'rooms';
 @import 'utils';
+@import 'contact';
 @import "footer";
+@import "animate";
 * {
   padding: 0;
   margin: 0;
@@ -302,4 +304,14 @@
       }
     }
   }
+}
+
+
+.js-scroll {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+ 
+.js-scroll.scrolled {
+  opacity: 1;
 }

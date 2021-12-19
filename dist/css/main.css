@@ -130,7 +130,7 @@
 
 /*-------------- experience css-------- */
 .exp {
-  width: 85%;
+  width: 88%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 6rem;
@@ -150,20 +150,24 @@
 }
 
 .exp__1 h3 {
-  font-size: 2.1rem;
+  font-size: 1.4rem;
   color: #AA8B1B;
   font-weight: 300;
 }
 
 .exp__2 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   margin: 1.5rem 0rem;
+  width: 90%;
+  margin: auto;
 }
 
 .exp__3 {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.5rem;
-  margin: 1rem 0rem;
+  margin: auto;
+  margin-top: 3rem;
+  font-weight: 300;
 }
 
 /* body{background-image: url(./background.jpg);
@@ -192,18 +196,20 @@
 }
 
 .main__right img {
-  width: 100%;
-  margin: 1.5rem auto;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .main__right h4 {
-  font-size: 2.5rem;
-  font-weight: 250;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .main__right p {
-  font-size: 1.1rem;
-  line-height: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 2rem;
 }
 
 .main__left {
@@ -211,6 +217,31 @@
 }
 
 @media (min-width: 768px) {
+  .exp {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+  }
+  .exp__1 {
+    margin: 2rem 0rem;
+  }
+  .exp__1 h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .exp__2 {
+    font-size: 1rem;
+    margin: 1.5rem 0rem;
+    width: 88%;
+    margin: auto;
+  }
+  .exp__3 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    width: 70%;
+  }
   .main__right img {
     display: none;
   }
@@ -260,6 +291,17 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+section {
+  -webkit-animation-name: ShowUp;
+          animation-name: ShowUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 .story__container {
@@ -702,6 +744,88 @@
   font-weight: 500;
 }
 
+.contactinfo {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact {
+  background: #D3D3D3;
+  width: 100%;
+  margin: auto;
+}
+
+.form__form-message {
+  margin-top: 2rem;
+}
+
+#name {
+  margin-top: 2rem;
+  width: 60%;
+  font-size: 1.2rem;
+  height: 2.2rem;
+  padding: 0.5rem;
+}
+
+#message {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.contact__form-button {
+  margin-top: 2rem;
+}
+
+.contact__form-button-btn {
+  width: 50%;
+  height: 50%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: #404040;
+}
+
+.contact__form-button-btn {
+  font-size: 1.2rem;
+}
+
+.map {
+  height: 40rem;
+  width: 94%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.contact p {
+  font-size: 2rem;
+  font-weight: 50;
+}
+
+.locate {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #name {
+    width: 40%;
+  }
+  #message {
+    width: 40%;
+    padding: 0.5rem;
+  }
+  .contact__form-button-btn {
+    width: 15%;
+  }
+  .contact {
+    width: 100%;
+    margin: auto;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -860,6 +984,67 @@
     display: grid;
     -ms-grid-columns: 0.5fr 0.25fr 0.25fr;
         grid-template-columns: 0.5fr 0.25fr 0.25fr;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.4s;
+          animation: fade-in 1.4s;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.7, 0.7);
+            transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+  position: relative;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    top: -2px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: -2px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: -2px;
+  }
+  50% {
+    top: 2px;
+  }
+  100% {
+    top: -2px;
   }
 }
 
@@ -1241,5 +1426,15 @@
   .home__bottom__header-items-item {
     margin-left: 2.3rem;
   }
+}
+
+.js-scroll {
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
