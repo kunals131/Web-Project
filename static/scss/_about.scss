@@ -34,6 +34,12 @@
       
     }
 
+    @media (min-width: 768px) {
+      .exp{
+        width: 60%;
+      }
+    }
+
  /* body{background-image: url(./background.jpg);
      background-repeat: repeat;
      height: 100vh;
@@ -107,4 +113,111 @@
     line-height: 1.5rem;
   }
   
+}
+
+// ----------feel like home ------------
+
+.feel{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+   font-family: 'Poppins', sans-serif;
+}
+.feel__1 h3{
+    margin: 2rem 0rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.feel__2{
+  font-size: 1rem;
+}
+.feel__3{
+  display: grid;
+  grid-template-columns:  repeat(3,0.33fr);
+  grid-auto-flow: column;
+  overflow-x: scroll;
+}
+.feel__3 img{
+  margin: 1rem 0rem;
+  width: 85%;
+}
+
+ @media (min-width: 768px) {
+   .feel__1 , .feel__2{
+     width: 80%;
+     margin: auto;
+   }
+ }
+
+ .rgallery {
+  margin-top:4rem;
+  &__content {
+      width: 88%;
+      margin: auto;
+      text-align: center;
+  }
+  &__text {
+      display: flex;
+      justify-content: space-between;
+     &-heading {
+         font-size: 1.4rem;
+         font-family: 'Noto Serif Display', serif;
+     }
+  }
+  &__grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2,0.5fr);
+      justify-content: center;
+      align-items: center;
+      overflow-x: scroll;
+      justify-content: center;
+      grid-gap: 1rem;
+
+      grid-auto-flow: column;
+      &-item {
+          height: 100%;
+          width: 100%;
+          &-img {
+              width: 200px;
+              height: 230px;
+              background: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80') center center/cover;
+          }
+      }
+
+  }
+}
+
+@media (min-width: 768px){
+  .rgallery {
+      margin-top:7rem;
+      &__content {
+          width: 80%;  
+      }
+      &__grid {
+          margin-top: 2rem;
+          display: grid;
+          grid-template-columns: repeat(2,0.5fr);
+          justify-content: center;
+          align-items: center;
+          overflow-x: scroll;
+          justify-content: center;
+          grid-gap: 1rem;
+  
+          grid-auto-flow: column;
+          &-item {
+              &-img {
+                  width: 300px;
+                  height: 344px;
+              }
+          }
+  
+      }
+  }
+}
+
+.secondary__gallery {
+  margin-top: 4rem;
 }
