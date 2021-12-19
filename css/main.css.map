@@ -7,7 +7,7 @@
         "../static/scss/_fonts.scss",
         "../static/scss/_covid.scss",
         "../static/scss/_about.scss",
-        "../static/scss/team.scss",
+        "../static/scss/_team.scss",
         "../static/scss/_blog.scss",
         "../static/scss/_rooms.scss",
         "../static/scss/_utils.scss",
