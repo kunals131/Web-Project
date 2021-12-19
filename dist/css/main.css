@@ -976,6 +976,106 @@ section {
   font-weight: 500;
 }
 
+/* ----------find css-------- */
+.contactinfo {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact {
+  background: #D3D3D3;
+  width: 80%;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.form__form-message {
+  margin-top: 2rem;
+}
+
+#name {
+  margin-top: 2rem;
+  width: 60%;
+  font-size: 1.2rem;
+  height: 2.2rem;
+  padding: 0.5rem;
+}
+
+#message {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.contact__form-button {
+  margin-top: 2rem;
+}
+
+.contact__form-button-btn {
+  width: 50%;
+  height: 50%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  background-color: #404040;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+.contact__form-button-btn:hover {
+  background-color: white;
+  color: #404040;
+}
+
+.map {
+  height: 40rem;
+  width: 94%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  font-weight: 50;
+}
+
+.locate {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.contactinfo h3 {
+  font-weight: 400;
+  margin: 1rem 0rem;
+  font-size: 1.5rem;
+}
+
+.map {
+  height: 30rem;
+  width: 60%;
+}
+
+@media screen and (min-width: 768px) {
+  #name {
+    width: 50%;
+  }
+  #message {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .contact__form-button-btn {
+    width: 30%;
+  }
+  .contact {
+    width: 50%;
+    margin: auto;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
