@@ -1,0 +1,111 @@
+.booking {
+    &__tab {
+        width: 70%;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #f3f3f3;
+        position: relative;
+        top: -50px;
+        border-radius: 4px;
+        &-form {
+            padding: 1.5rem;
+            display: flex;
+            &:first-child {
+                margin-left: -6rem;
+            }
+            &__item {
+                margin-left: 6rem;
+                label {
+                    display: block;
+                    font-size: 0.8rem;
+                }
+                input {
+                    margin-top: 0.2rem;
+                    width: 145%;
+                    height: 2rem;
+                    padding: 0.7rem;
+                    border-radius: 4px;
+                    border: none;
+                    &:focus-within {
+                        border: none;
+                    }
+                }
+            }
+        }
+        &-search {
+            background-color: #2B73FF;
+            cursor: pointer;
+            height: 7rem;
+            &:hover {
+                background-color: #004ee9;
+            }
+            width:4rem;
+            border-radius: 4px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid black;
+        justify-content: center;
+    }
+    &__heading {
+        text-align: center;
+        font-size:1.7rem;
+        font-family: 'Noto Serif Display', serif;
+    }
+    &__grid {
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        display: grid;
+        margin-top: 3rem;
+
+        grid-gap: 2.5rem;
+        // border: 1px solid black;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,auto);
+        &-item {
+            padding: 1rem;
+            background: linear-gradient(#F8F8F8, rgb(243, 243, 243));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            border-radius: 5px;
+            flex-direction: column;
+            img {
+                width:100%;
+                border-radius: 5px;
+            }
+            &-title {
+                font-size: 0.9rem;
+                margin-top: 1.3rem;
+            }
+            &-sub {
+                margin-top: 0.1rem;
+                color: grey;
+                font-size: 0.7rem;
+            }
+            button {
+                margin-top: 0.8rem;
+                width: 90%;
+                padding: 0.3rem 0.6rem;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
