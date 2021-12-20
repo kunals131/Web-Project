@@ -2159,6 +2159,11 @@ section {
   background: url("../assets/bg-home.png") center center/cover;
 }
 
+.home a {
+  color: white;
+  text-decoration: none;
+}
+
 .home__header {
   padding-top: 1.5rem;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2444,21 +2449,26 @@ section {
     font-family: "blackChancery", sans-serif;
   }
   .home__bottom {
-    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.5)), to(transparent));
-    background: linear-gradient(360deg, black, rgba(0, 0, 0, 0.5), transparent);
+    background: rgba(0, 0, 0, 0.7);
   }
   .home__bottom__header-logo {
     display: none;
   }
   .home__bottom__header-items {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -2.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -2rem;
   }
   .home__bottom__header-items-item {
-    margin-left: 2.3rem;
+    margin-left: 1.5rem;
+  }
+  .home__bottom__header-items-item a {
+    font-size: 0.8rem;
   }
 }
 
