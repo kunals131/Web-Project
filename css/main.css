@@ -518,13 +518,13 @@ section {
 }
 
 .story__message-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 1.4rem;
   font-weight: 300;
 }
 
 .story__message-name {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'Noto Serif Display', serif;
   margin-top: 0.9rem;
 }
@@ -778,11 +778,11 @@ section {
 }
 
 .about__item-text-heading {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .about__item-text-para {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin-top: 0.4rem;
 }
 
