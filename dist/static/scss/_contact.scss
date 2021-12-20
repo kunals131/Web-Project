@@ -119,7 +119,7 @@
     margin: auto;
     font-weight: 400;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-top: 1rem;
   }
   &__grid {
@@ -187,7 +187,7 @@
       grid-gap: 0.3rem;
       &-item {
         height: 20rem;
-        background: url('../assets/bg-home.png') center center/cover;
+        // background: url('../assets/bg-home.png') center center/cover;
         &-text {
           height: 20rem;
           width: 100%;
@@ -216,4 +216,15 @@
       }
     }
   }
+}
+
+.img1{
+  background: url('https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3BhaW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') center center/cover;
+} 
+.img2{
+  background: url('https://images.unsplash.com/photo-1545126178-862cdb469409?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW5kaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60') center center/cover;
+}
+
+.img3{
+  background: url('https://images.unsplash.com/photo-1534270804882-6b5048b1c1fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bmV3JTIweW9ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60') center center/cover;
 }
