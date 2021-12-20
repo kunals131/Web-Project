@@ -539,8 +539,8 @@ section {
 }
 
 .core__manage {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#f7f7f7), to(#f7f7f7));
-  background-image: linear-gradient(white, #f7f7f7, #f7f7f7);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(#f7f7f7), color-stop(#f7f7f7), to(white));
+  background-image: linear-gradient(white, #f7f7f7, #f7f7f7, white);
 }
 
 .core__content {
@@ -719,7 +719,8 @@ section {
 }
 
 .about {
-  background-color: #e9e9e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e9e9e9), to(white));
+  background: linear-gradient(#e9e9e9, white);
   height: 100%;
 }
 
@@ -1052,8 +1053,8 @@ section {
     background: url("https://media.istockphoto.com/photos/beachfront-swimming-pool-picture-id1208302982?b=1&k=20&m=1208302982&s=170667a&w=0&h=eqNmOqINQVQWcqG6a8zxoIe-8lZBW7zWklgHxGKTFRw=") center center/cover;
   }
   .home-section-2 {
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
-    background: linear-gradient(white, lightgray);
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(lightgray), to(white));
+    background: linear-gradient(white, lightgray, white);
     margin-top: 4rem;
   }
   .home-section-2__content {
