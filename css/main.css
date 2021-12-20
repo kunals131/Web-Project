@@ -282,8 +282,8 @@
     transition: all 0.7s ease-in-out;
   }
   .main__left img:hover {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .main {
     -webkit-box-orient: horizontal;
@@ -321,12 +321,13 @@ section {
 .feel__1 h3 {
   margin: 2rem 0rem;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
 .feel__2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .feel__3 {
@@ -782,7 +783,7 @@ section {
 }
 
 .about__item-text-para {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin-top: 0.4rem;
 }
 
