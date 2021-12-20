@@ -719,9 +719,11 @@ section {
 
 .about {
   background-color: #e9e9e9;
+  height: 100%;
 }
 
 .about__main {
+  padding: 2rem;
   padding-top: 2rem;
   width: 80%;
   margin: auto;
@@ -740,7 +742,7 @@ section {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
 }
 
 .about__item {
@@ -755,9 +757,9 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(white));
-  background: linear-gradient(#e4e4e4, white);
+  padding: 0.6rem;
+  background: white;
+  border-radius: 4px;
 }
 
 .about__item-img {
@@ -771,12 +773,79 @@ section {
   height: 100%;
 }
 
+.about__item-text {
+  margin-top: 0.7rem;
+}
+
 .about__item-text-heading {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .about__item-text-para {
   font-size: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    background-color: #e9e9e9;
+    height: 100%;
+  }
+  .about__main {
+    padding: 2rem;
+    padding-top: 2rem;
+    width: 90%;
+    margin: auto;
+  }
+  .about__heading {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .about__container {
+    margin-top: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .about__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 0.6rem;
+    background: white;
+    border-radius: 4px;
+  }
+  .about__item-img {
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem auto;
+  }
+  .about__item-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about__item-text {
+    margin-top: 0.7rem;
+  }
+  .about__item-text-heading {
+    font-size: 0.9rem;
+  }
+  .about__item-text-para {
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+  }
 }
 
 .home-section-1__para {
