@@ -1698,6 +1698,59 @@ section {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .booking__tab {
+    width: 90%;
+  }
+  .booking__tab-form {
+    padding: 1.5rem;
+  }
+  .booking__tab-form:first-child {
+    margin-left: -1rem;
+  }
+  .booking__tab-form__item {
+    margin-left: 1rem;
+  }
+  .booking__tab-form__item label {
+    font-size: 0.7rem;
+  }
+  .booking__tab-form__item input {
+    width: 100%;
+  }
+  .booking__tab-search {
+    background-color: #2B73FF;
+    cursor: pointer;
+    height: 7rem;
+    width: 4rem;
+    border-radius: 4px;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .booking__tab-search:hover {
+    background-color: #004ee9;
+  }
+  .booking__container {
+    width: 80%;
+  }
+  .booking__grid {
+    width: 95%;
+    grid-gap: 1.7rem;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .booking__grid-item {
+    padding: 1rem;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
