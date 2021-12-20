@@ -861,7 +861,7 @@ section {
   right: -10px;
   background-color: black;
   height: 24rem;
-  background: url("../assets/bg-home.png") center center/cover;
+  background: url("https://media.istockphoto.com/photos/beachfront-swimming-pool-picture-id1208302982?b=1&k=20&m=1208302982&s=170667a&w=0&h=eqNmOqINQVQWcqG6a8zxoIe-8lZBW7zWklgHxGKTFRw=") center center/cover;
 }
 
 .home-section-2 {
@@ -979,7 +979,7 @@ section {
     right: -10px;
     background-color: black;
     height: 24rem;
-    background: url("../assets/bg-home.png") center center/cover;
+    background: url("https://media.istockphoto.com/photos/beachfront-swimming-pool-picture-id1208302982?b=1&k=20&m=1208302982&s=170667a&w=0&h=eqNmOqINQVQWcqG6a8zxoIe-8lZBW7zWklgHxGKTFRw=") center center/cover;
   }
   .home-section-2 {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
@@ -1017,6 +1017,26 @@ section {
     height: 30rem;
     background: url("../assets/bg-home.png") center center/cover;
   }
+}
+
+.img1 {
+  background: url("https://media.istockphoto.com/photos/old-silver-tableware-picture-id1280333671?b=1&k=20&m=1280333671&s=170667a&w=0&h=KEdsWPxPsALM8TwTzzRRafZhEX13fqW4uVgCn7AgBuc=") center center/cover;
+}
+
+.img2 {
+  background: url("https://media.istockphoto.com/photos/luxury-rococo-bedroom-picture-id177112902?b=1&k=20&m=177112902&s=170667a&w=0&h=7qHx8wA154Dfi34A6P8BISBrbVhPwapNdgnGXvXZX2Q=") center center/cover;
+}
+
+.img3 {
+  background: url("https://media.istockphoto.com/photos/ballroom-picture-id481101891?b=1&k=20&m=481101891&s=170667a&w=0&h=6p6DGoym6n7J1vhY8PCn3aieXSE9x-fTjLDvAAEUM2o=") center center/cover;
+}
+
+.img4 {
+  background: url("https://media.istockphoto.com/photos/magic-of-arabia-xxxl-picture-id108310819?b=1&k=20&m=108310819&s=170667a&w=0&h=mcuHnv28q9zB08El4EjF3KC2o0Gk5NzqR04GeEPGddA=") center center/cover;
+}
+
+.img5 {
+  background: url("https://media.istockphoto.com/photos/arabian-style-resort-picture-id108310813?b=1&k=20&m=108310813&s=170667a&w=0&h=6qncaT3FwTfjeHZFJktrEmKAlx7M6LTRMIjcJVSuH3Q=") center center/cover;
 }
 
 .hotel {
