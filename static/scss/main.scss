@@ -19,6 +19,10 @@
 }
 
 .home {
+  a {
+    color: white;
+    text-decoration: none;
+  }
   height: 100vh;
   background-color: black;
   background: url("../assets/bg-home.png") center center/cover;
@@ -289,21 +293,26 @@
       }
     }
     &__bottom {
-      background: linear-gradient(360deg, black, rgba(black, 0.5), transparent);
+      
+      background: rgba(0, 0, 0, 0.7);
 
       &__header {
         &-logo {
           display: none;
         }
         &-items {
-          font-size: 0.8rem;
+          font-size: 0.5rem;
 
           // margin-left: -1rem;
           align-items: center;
-          margin-left: -2.3rem;
+          justify-content: center;
+          margin-left: -2rem;
 
           &-item {
-            margin-left: 2.3rem;
+            margin-left: 1.5rem;
+            a {
+              font-size: 0.8rem;
+            }
           }
         }
       }
