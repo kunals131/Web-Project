@@ -7,6 +7,9 @@
       padding-top: 2rem;
       width: 80%;
       margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   &__heading {
       text-align: center;
@@ -15,6 +18,7 @@
   &__container {
       margin-top: 2rem;
       display: grid;
+      margin: auto;
       grid-template-columns: repeat(3,1fr);
       grid-template-rows: repeat(3,1fr);
       justify-content: center;
