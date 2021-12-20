@@ -1,0 +1,91 @@
+.popup {
+    position: absolute;
+    transform: translateX(-150vw);
+    top: 80px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 4px;
+    width: 30%;
+    transition: 0.3s all ease-in-out;
+    &__content {
+        padding: 1rem;
+    }
+    &-heading {
+        font-weight: 500;
+        color: green;
+    }
+    &-para {
+        p {
+            margin-top: 0.7rem;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+    }
+    &-button {
+        margin-top: 0.7rem;
+        padding: 0.3rem 0.7rem;
+        border : 1px solid black;
+        color: transparent;
+        transition: all 0.3s ease-in-out;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        &:hover {
+            background-color: green;
+            border: none;
+            a{color: white;}
+        }
+    }
+}
+
+.popup-invisible {
+    transform: translateX(0);
+}
+
+@media screen and (max-width:768px) {
+    .popup {
+        position: absolute;
+        transform: translateX(-130vw);
+        top: 80px;
+        left: 10px;
+        background-color: rgba(255, 255, 255, 0.884);
+        border-radius: 4px;
+        width: 60%;
+        transition: 0.3s all ease-in-out;
+        &__content {
+            padding: 1rem;
+        }
+        &-heading {
+            font-weight: 500;
+            font-size: 0.8rem;
+            color: green;
+        }
+        &-para {
+            p {
+                margin-top: 0.5rem;
+                font-size: 0.7rem;
+                width: 100%;
+            }
+        }
+        &-button {
+            margin-top: 0.7rem;
+            padding: 0.3rem 0.7rem;
+            border : 1px solid black;
+            color: transparent;
+            transition: all 0.3s ease-in-out;
+            a {
+                color: black;
+                font-size: 0.7rem;
+                text-decoration: none;
+            }
+            &:hover {
+                background-color: green;
+                border: none;
+                a{color: white;}
+            }
+        }
+    }
+    
+    
+}

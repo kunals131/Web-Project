@@ -9,6 +9,7 @@
 @import 'utils';
 @import 'contact';
 @import "footer";
+@import 'popup';
 @import "animate";
 @import 'booking';
 * {
@@ -88,7 +89,9 @@
         font-weight: 500;
         &:hover {
           background: white;
-          color: black;
+          a {
+            color: black;
+          }
         }
       }
     }
