@@ -234,17 +234,17 @@
     margin: 2rem 0rem;
   }
   .exp__1 h3 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
   .exp__2 {
-    font-size: 1rem;
-    margin: 1.5rem 0rem;
-    width: 88%;
+    font-size: 1.3rem;
+    margin: 1.2rem 0rem;
+    width: 80%;
     margin: auto;
   }
   .exp__3 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.2rem;
     width: 70%;
   }
@@ -262,6 +262,7 @@
   }
   .main__right h4 {
     padding-bottom: 1rem;
+    font-size: 2rem;
     font-weight: 300;
   }
   .main__left {
@@ -294,7 +295,7 @@
             align-items: center;
   }
   .main__right p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
   }
 }
@@ -349,17 +350,17 @@ section {
   }
 }
 
-.rgallery {
+.aboutgallery {
   margin-top: 4rem;
 }
 
-.rgallery__content {
+.aboutgallery__content {
   width: 88%;
   margin: auto;
   text-align: center;
 }
 
-.rgallery__text {
+.aboutgallery__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,12 +369,12 @@ section {
           justify-content: space-between;
 }
 
-.rgallery__text-heading {
+.aboutgallery__text-heading {
   font-size: 1.4rem;
   font-family: 'Noto Serif Display', serif;
 }
 
-.rgallery__grid {
+.aboutgallery__grid {
   margin-top: 2rem;
   display: -ms-grid;
   display: grid;
@@ -391,25 +392,51 @@ section {
   grid-auto-flow: column;
 }
 
-.rgallery__grid-item {
+.aboutgallery__grid-item {
   height: 100%;
   width: 100%;
 }
 
-.rgallery__grid-item-img {
+.aboutgallery__grid-item-img1 {
   width: 200px;
   height: 230px;
-  background: url("https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center center/cover;
+  background: url("https://images.unsplash.com/photo-1623874514711-0f321325f318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") center center/cover;
+}
+
+.aboutgallery__grid-item-img2 {
+  width: 200px;
+  height: 230px;
+  background: url("https://images.unsplash.com/photo-1621293947870-3d7d6001d2a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80") center center/cover;
+}
+
+.aboutgallery__grid-item-img3 {
+  width: 200px;
+  height: 230px;
+  background: url("https://images.unsplash.com/photo-1445019980597-93fa8acb246c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80") center center/cover;
+}
+
+.aboutgallery__grid-item-img4 {
+  width: 200px;
+  height: 230px;
+  background: url("https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80") center center/cover;
+}
+
+.aboutgallery__grid-item-img5 {
+  width: 200px;
+  height: 230px;
+  background: url("https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80") center center/cover;
 }
 
 @media (min-width: 768px) {
-  .rgallery {
+  .aboutgallery {
     margin-top: 7rem;
   }
-  .rgallery__content {
+  .aboutgallery__content {
     width: 80%;
   }
-  .rgallery__grid {
+  .aboutgallery__grid {
+    width: 80%;
+    margin: auto;
     margin-top: 2rem;
     display: -ms-grid;
     display: grid;
@@ -426,7 +453,23 @@ section {
     grid-gap: 1rem;
     grid-auto-flow: column;
   }
-  .rgallery__grid-item-img {
+  .aboutgallery__grid-item-img1 {
+    width: 300px;
+    height: 344px;
+  }
+  .aboutgallery__grid-item-img2 {
+    width: 300px;
+    height: 344px;
+  }
+  .aboutgallery__grid-item-img3 {
+    width: 300px;
+    height: 344px;
+  }
+  .aboutgallery__grid-item-img4 {
+    width: 300px;
+    height: 344px;
+  }
+  .aboutgallery__grid-item-img5 {
     width: 300px;
     height: 344px;
   }
@@ -712,11 +755,20 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(white));
+  background: linear-gradient(#e4e4e4, white);
 }
 
 .about__item-img {
-  width: 200px;
+  width: 230px;
   height: 200px;
+  margin: 0.5rem auto;
+}
+
+.about__item-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .about__item-text-heading {
