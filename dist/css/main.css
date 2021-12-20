@@ -719,9 +719,11 @@ section {
 
 .about {
   background-color: #e9e9e9;
+  height: 100%;
 }
 
 .about__main {
+  padding: 2rem;
   padding-top: 2rem;
   width: 80%;
   margin: auto;
@@ -740,7 +742,7 @@ section {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5rem;
+  grid-gap: 2rem;
 }
 
 .about__item {
@@ -755,9 +757,9 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(white));
-  background: linear-gradient(#e4e4e4, white);
+  padding: 0.6rem;
+  background: white;
+  border-radius: 4px;
 }
 
 .about__item-img {
@@ -771,12 +773,79 @@ section {
   height: 100%;
 }
 
+.about__item-text {
+  margin-top: 0.7rem;
+}
+
 .about__item-text-heading {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .about__item-text-para {
   font-size: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    background-color: #e9e9e9;
+    height: 100%;
+  }
+  .about__main {
+    padding: 2rem;
+    padding-top: 2rem;
+    width: 90%;
+    margin: auto;
+  }
+  .about__heading {
+    text-align: center;
+    font-size: 1.7rem;
+  }
+  .about__container {
+    margin-top: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .about__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 0.6rem;
+    background: white;
+    border-radius: 4px;
+  }
+  .about__item-img {
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem auto;
+  }
+  .about__item-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about__item-text {
+    margin-top: 0.7rem;
+  }
+  .about__item-text-heading {
+    font-size: 0.9rem;
+  }
+  .about__item-text-para {
+    font-size: 0.5rem;
+    margin-top: 0.4rem;
+  }
 }
 
 .home-section-1__para {
@@ -861,7 +930,7 @@ section {
   right: -10px;
   background-color: black;
   height: 24rem;
-  background: url("../assets/bg-home.png") center center/cover;
+  background: url("https://media.istockphoto.com/photos/beachfront-swimming-pool-picture-id1208302982?b=1&k=20&m=1208302982&s=170667a&w=0&h=eqNmOqINQVQWcqG6a8zxoIe-8lZBW7zWklgHxGKTFRw=") center center/cover;
 }
 
 .home-section-2 {
@@ -979,7 +1048,7 @@ section {
     right: -10px;
     background-color: black;
     height: 24rem;
-    background: url("../assets/bg-home.png") center center/cover;
+    background: url("https://media.istockphoto.com/photos/beachfront-swimming-pool-picture-id1208302982?b=1&k=20&m=1208302982&s=170667a&w=0&h=eqNmOqINQVQWcqG6a8zxoIe-8lZBW7zWklgHxGKTFRw=") center center/cover;
   }
   .home-section-2 {
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(lightgray));
@@ -1017,6 +1086,26 @@ section {
     height: 30rem;
     background: url("../assets/bg-home.png") center center/cover;
   }
+}
+
+.img1 {
+  background: url("https://media.istockphoto.com/photos/old-silver-tableware-picture-id1280333671?b=1&k=20&m=1280333671&s=170667a&w=0&h=KEdsWPxPsALM8TwTzzRRafZhEX13fqW4uVgCn7AgBuc=") center center/cover;
+}
+
+.img2 {
+  background: url("https://media.istockphoto.com/photos/luxury-rococo-bedroom-picture-id177112902?b=1&k=20&m=177112902&s=170667a&w=0&h=7qHx8wA154Dfi34A6P8BISBrbVhPwapNdgnGXvXZX2Q=") center center/cover;
+}
+
+.img3 {
+  background: url("https://media.istockphoto.com/photos/ballroom-picture-id481101891?b=1&k=20&m=481101891&s=170667a&w=0&h=6p6DGoym6n7J1vhY8PCn3aieXSE9x-fTjLDvAAEUM2o=") center center/cover;
+}
+
+.img4 {
+  background: url("https://media.istockphoto.com/photos/magic-of-arabia-xxxl-picture-id108310819?b=1&k=20&m=108310819&s=170667a&w=0&h=mcuHnv28q9zB08El4EjF3KC2o0Gk5NzqR04GeEPGddA=") center center/cover;
+}
+
+.img5 {
+  background: url("https://media.istockphoto.com/photos/arabian-style-resort-picture-id108310813?b=1&k=20&m=108310813&s=170667a&w=0&h=6qncaT3FwTfjeHZFJktrEmKAlx7M6LTRMIjcJVSuH3Q=") center center/cover;
 }
 
 .hotel {
@@ -2139,6 +2228,11 @@ section {
   background: url("../assets/bg-home.png") center center/cover;
 }
 
+.home a {
+  color: white;
+  text-decoration: none;
+}
+
 .home__header {
   padding-top: 1.5rem;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2424,21 +2518,26 @@ section {
     font-family: "blackChancery", sans-serif;
   }
   .home__bottom {
-    background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(rgba(0, 0, 0, 0.5)), to(transparent));
-    background: linear-gradient(360deg, black, rgba(0, 0, 0, 0.5), transparent);
+    background: rgba(0, 0, 0, 0.7);
   }
   .home__bottom__header-logo {
     display: none;
   }
   .home__bottom__header-items {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: -2.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -2rem;
   }
   .home__bottom__header-items-item {
-    margin-left: 2.3rem;
+    margin-left: 1.5rem;
+  }
+  .home__bottom__header-items-item a {
+    font-size: 0.8rem;
   }
 }
 
