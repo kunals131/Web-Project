@@ -282,8 +282,8 @@
     transition: all 0.7s ease-in-out;
   }
   .main__left img:hover {
-    -webkit-transform: scale(1.25);
-            transform: scale(1.25);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .main {
     -webkit-box-orient: horizontal;
@@ -322,12 +322,13 @@ section {
 .feel__1 h3 {
   margin: 2rem 0rem;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
 .feel__2 {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .feel__3 {
@@ -783,7 +784,7 @@ section {
 }
 
 .about__item-text-para {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   margin-top: 0.4rem;
 }
 
@@ -1957,6 +1958,110 @@ section {
   }
 }
 
+.popup {
+  position: absolute;
+  -webkit-transform: translateX(-150vw);
+          transform: translateX(-150vw);
+  top: 80px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 4px;
+  width: 30%;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.popup__content {
+  padding: 1rem;
+}
+
+.popup-heading {
+  font-weight: 500;
+  color: green;
+}
+
+.popup-para p {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.popup-button {
+  margin-top: 0.7rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid black;
+  color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup-button a {
+  color: black;
+  text-decoration: none;
+}
+
+.popup-button:hover {
+  background-color: green;
+  border: none;
+}
+
+.popup-button:hover a {
+  color: white;
+}
+
+.popup-invisible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    position: absolute;
+    -webkit-transform: translateX(-130vw);
+            transform: translateX(-130vw);
+    top: 80px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 4px;
+    width: 60%;
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+  }
+  .popup__content {
+    padding: 1rem;
+  }
+  .popup-heading {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: green;
+  }
+  .popup-para p {
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .popup-button {
+    margin-top: 0.7rem;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid black;
+    color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .popup-button a {
+    color: black;
+    font-size: 0.7rem;
+    text-decoration: none;
+  }
+  .popup-button:hover {
+    background-color: green;
+    border: none;
+  }
+  .popup-button:hover a {
+    color: white;
+  }
+}
+
 .hidden {
   opacity: 0;
 }
@@ -2340,6 +2445,9 @@ section {
 
 .home__header__right__button:hover {
   background: white;
+}
+
+.home__header__right__button:hover a {
   color: black;
 }
 

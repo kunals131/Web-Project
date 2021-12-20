@@ -40,3 +40,10 @@ tick();
 
 })
 
+//popup
+const popup = document.querySelector('.popup');
+document.addEventListener('DOMContentLoaded', ()=>{
+
+  setTimeout(()=>popup.classList.toggle('popup-invisible'), 1000);
+  setTimeout(()=>popup.classList.toggle('popup-invisible'), 7000)
+})
